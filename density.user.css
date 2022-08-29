@@ -1,0 +1,94 @@
+/* ==UserStyle==
+@name           Maximum Density
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Increases the density of websites by reducing whitespace.
+@author         terinjokes
+@preprocessor   stylus
+==/UserStyle== */
+
+@-moz-document domain("search.nixos.org")
+    body > div:first-child
+        min-height unset
+    .container
+    &.main
+    footer
+        width 100% !important
+    .navbar-inner
+        min-height unset
+        padding: 0 8px
+    .navbar .brand
+        padding unset
+        margin 0 16px 0 0
+    .navbar .brand .logo
+        margin unset !important
+        padding unset !important
+        height 16px !important
+    .navbar .nav > li > a
+        padding unset
+        margin 0 16px 0 0
+
+    .search-page > h1
+        margin unset !important
+        font-size 22px !important
+        font-weight bold
+    .search-page form
+        margin unset
+    .search-page input
+        height unset !important
+        font-size unset !important
+        padding 4px 1px
+        margin unset
+    .search-page input:focus
+        outline none
+    .search-page > .search-input > div:nth-child(1) > button
+        padding unset
+        height 30px
+        font-size unset !important
+
+    .search-page ul.search-sidebar > li
+        padding unset
+    .search-page ul.search-sidebar > li > ul > li > a
+        padding unset
+    .search-page ul.search-sidebar:empty
+        display none
+
+    .package, .option
+        margin-bottom unset !important
+        padding-bottom unset !important
+    .result-item-show-more
+        top unset !important
+        padding unset !important
+    .search-page > .search-results > div > ul
+        margin unset !important
+    .search-page > .search-results > div > :nth-child(2) > li.package > :nth-child(5)
+        margin unset
+    .search-page > .search-results > div > :nth-child(2) > li.package > :nth-child(5) > div
+        margin unset !important
+    .search-page > .search-results > div > :nth-child(2) > li.package > :nth-child(5) > :nth-child(2) h4
+        margin unset
+    .search-page > .search-results > div > :nth-child(2) > li.package > :nth-child(5) > :nth-child(2) ul.nav-tabs > li > a
+        padding 0 4px
+    .search-page > .search-results > div > :nth-child(2) > li.package > :nth-child(5) > :nth-child(2) div.tab-content
+        padding 4px
+    .code-block
+        padding 4px
+    .search-page > .search-results h4
+        margin unset
+    .search-result-button
+        padding unset !important
+        margin unset !important
+    .search-page > .search-results > div > :nth-child(2) > li.option > :nth-child(2)
+        margin unset
+     dl
+        margin unset
+
+    .pager
+        margin unset
+    .pager li > a, .pager li > span
+        padding 0 4px
+
+
+/* Local Variables: */
+/* mode: stylus */
+/* End: */

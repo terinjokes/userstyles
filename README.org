@@ -1,0 +1,18 @@
+#+title: UserStyles
+
+* About
+This is a collection of userstyles to adjust the styling of websites I commonly use. Currently there are two styles, Nord Dark Mode and Maximum Density.
+
+** Nord Dark Mode
+[[file:doc/nord.png]]
+
+A dark mode style that uses the Nord color scheme to provide an arctic night's flair to the web.
+
+- [[https://github.com/terinjokes/userstyles/raw/trunk/nord.user.css][Install with Stylus]]
+
+** Maximum Density
+[[file:doc/density.png]]
+
+A style that increases the density of the web by reducing margins and padding. It is inspired by (and can often be paired with) [[https://github.com/phil294/density-userstyle][density-userstyle]].
+
+- [[https://github.com/terinjokes/userstyles/raw/trunk/density.user.css][Install with Stylus]]

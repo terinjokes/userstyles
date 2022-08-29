@@ -1,0 +1,159 @@
+/* ==UserStyle==
+@name           Nord Dark Mode
+@namespace      github.com/openstyles/stylus
+@preprocessor   stylus
+@version        0.0.1
+@description    A darkmode theme using the Nord colorscheme
+@author         terinjokes
+==/UserStyle== */
+
+@-moz-document domain("search.nixos.org")
+    :root
+        --dark5 #22262f
+        --dark4 #2e3440
+        --dark3 #333946
+        --dark2 #323846
+        --dark1 #4c566a
+
+        --white3 #d8dee9
+        --white2 #e5e9f0
+        --white1 #eceff4
+
+        --frost4 #8fbcbb
+        --frost3 #88c0d0
+        --frost2 #81a1c1
+        --frost1 #5e81ac
+
+        --red #bf616a
+        --orange #d08770
+        --yellow #ebcb8b
+        --green #a3be8c
+        --purple #b48ead
+
+        --blue #58a6ff
+
+    body
+        background-color var(--dark4)
+        color var(--white1)
+
+    a
+        color var(--blue)
+
+    .navbar-inner
+        background-color var(--dark5)
+        background-image unset
+        border unset
+    .navbar .nav > li > a
+        text-shadow unset
+        color var(--white1)
+    .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus
+        background-color var(--dark4)
+        color var(--white1)
+
+     #search-query-input
+         background-color var(--dark4) !important
+         color var(--white1) !important
+         border 1px solid var(--dark1)
+         outline none
+         box-shadow unset
+
+    /* Button */
+    .btn
+        background-color var(--dark1)
+        background-image unset
+        text-shadow unset
+        color var(--white1)
+        border 1px solid var(--dark1)
+        box-shadow unset !important
+        &.active
+        &:active
+            background-color var(--dark2) !important
+            background-image unset
+            text-shadow unset
+            color var(--white1)
+            border-color var(--dark1)
+        &:hover
+        &:focus
+            background-color var(--dark2) !important
+            background-image unset
+            text-shadow unset
+            color var(--white1)
+            border-color var(--white1)
+
+    .dropdown-menu
+        background-color var(--dark4)
+        color var(--white1)
+        & a
+            color var(--white1) !important
+            &:hover
+                background-color var(--dark1) !important
+                background-image unset !important
+        & .divider
+            background-color var(--dark5)
+            border-bottom-color var(--dark5)
+
+    /* Sidebar */
+    .search-page ul.search-sidebar a
+        color var(--white1) !important
+        &:hover
+            background-color var(--dark1) !important
+        & .badge
+            background-color var(--white3) !important
+            color var(--dark5)
+    .search-page ul.search-sidebar li
+        border-color var(--dark5)
+
+    .search-page .code-block
+        background-color var(--dark4) !important
+        border-color var(--dark5)
+        color var(--white1) !important
+
+    .nav-tabs
+    .tab-content
+        border-color var(--dark5) !important
+
+    .package
+    .option
+        border-color: var(--dark5) !important
+        & a
+            color var(--blue)
+        > :nth-child(3)
+            color var(--white3) !important
+        & code
+            background-color var(--dark5)
+            border-color var(--dark1)
+            color var(--red)
+        .result-item-show-more
+            background-color unset !important
+            color var(--frost1) !important
+    .nav-tabs > .active > a
+        &:hover
+        &:focus
+            background-color var(--dark5)
+            color var(--white3)
+            border-color var(--dark5)
+
+    .nav-tabs > li > a:hover
+    .nav-tabs > li > a:focus
+        background-color var(--dark4)
+
+    .pager .disabled > a
+    .pager .disabled > a:hover
+    .pager .disabled > a:focus
+    .pager .disabled > span
+        border 1px solid var(--dark1)
+        background-color var(--dark4) !important
+        color var(--white1)
+
+    .pager li > a
+    .pager li > span
+        border 1px solid var(--dark1)
+        background-color var(--dark4) !important
+        color var(--blue)
+        &:hover
+            background-color var(--dark5) !important
+            border-color var(--white1)
+
+/* Local Variables: */
+/* mode: stylus */
+/* End:  */
